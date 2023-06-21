@@ -16,5 +16,12 @@ public boolean iniciarSesion(String clave){
     return clave == "CursosOnLine";
 }
 
+//Usando la palabra super tenemos acceso a los metodos de la clase padre que estan en private
+    //Sobreescritura de metodo: cuando en la clase padre y en la hija hay un metodo con el mismo nombre.
+public double getBonificacion(){
+    return super.getSalario() +
+           // (super.getSalario()*0.1); //Para no escribir esto
+            super.getBonificacion();//con super accedemos al metodo bono de clase madre
+}
 
 }

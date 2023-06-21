@@ -1,3 +1,53 @@
 
 --- Java Polimorfismo ---
+//Gerente hereda los atributos de Funcionario por lo cual no es necesario
+//definir los atributos.
+
+//Usando la palabra super tenemos acceso a los metodos de la clase padre 
+que estan en private
+    
+--This--
+La palabra this se refiere al objeto actual en un metodo o constructor. El 
+uso mas comun de este termino es eliminar la confusion entre los atributos
+de clase y los parametros del mismo nombre (porque un atributo de clase esta
+sombreado por un parametro de metodo o constructor). Ademos de este uso,
+esta palabra se puede utilizar para:
+* Invocar al constructor de la clase actual.
+* Invocar el metodo de clase actual.
+* Devuelve el objeto de clase actual.
+* Pase un argumento en la llamada al metodo.
+* Pase un argumento en la llamada al constructor.
+
+-- Super --
+La palabra clave super se refiere a objetos de superclase(madre). Se utiliza
+para llamar a los metodos de la superclase y para acceder al constructor de
+la superclase. El uso mas comun de la palabra clase super es eliminar la 
+confusion entre superclases y subclases que tienen metodos con el mismo
+nombre.
+* super:
+  - Utilizado para referirse a la variable de instancia de la clase 
+    inmediatamente superior (clase madre).
+  - Se usa para invocar metodos de la clase inmediatamente superior(clase madre).
+* super();
+  - Se utiliza para invocar al constructor de la clase inmediatamente
+    superior (clase madre).
+
+
+La palabra llave con menor visibilidad es private, después viene 
+protected y después public.
+private - solo visible dentro de la clase.
+protected - visible dentro de la clase y también para las hijas.
+public - visible en todo lugar.
+También tenga en cuenta que protected está relacionado con la herencia.
+
+         private < protected < public
+
+
+
+
+
+
+
+
+
 

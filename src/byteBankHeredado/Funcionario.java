@@ -36,6 +36,9 @@ public class Funcionario {
         this.salario = salario;
     }
 
+    /*
+    //Este metodo no es escalabre debido a que utiliza numero para validar
+
     public double getBonificacion(){
         //Si tipo = 1 es gerente
         //Si tipo es 0 es funcionario
@@ -46,6 +49,11 @@ public class Funcionario {
         }else{
             return 0;
         }
+    }
+*/
+
+    public double getBonificacion(){
+            return this.salario * 0.1;
     }
 
     public int getTipo() {
