@@ -1,37 +1,20 @@
 package byteBankHeredado;
 
-public class Gerente {
-    private String nombre;
-    private String documento;
-    private double salario;
 
+//Gerente hereda los atributos de Funcionario por lo cual no es necesario
+//definir los atributos.
 
-    public String getNombre() {
-        return nombre;
-    }
+public class Gerente extends Funcionario{ //Gerente Extiende de funcionario
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    private String clave;
 
-    public String getDocumento() {
-        return documento;
-    }
+public void setClave(String clave){
+    this.clave = clave;
+}
 
-    public void setDocumento(String documento) {
-        this.documento = documento;
-    }
+public boolean iniciarSesion(String clave){
+    return clave == "CursosOnLine";
+}
 
-    public double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
-
-    public double getBonificacion(){
-        return this.salario;
-    }
 
 }
