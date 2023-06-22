@@ -15,5 +15,11 @@ public class ControlBonificacion {
         return this.suma;
     }
 
+    public double registrarSalario(Contador contador){
+        this.suma = contador.getBonificacion()+this.suma;
+        System.out.println("Calculo actual: " + this.suma);
+        return this.suma;
+    }
+
 
 }
