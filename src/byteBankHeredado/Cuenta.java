@@ -16,7 +16,7 @@ public class Cuenta {
     public Cuenta (int agencia, int numero){
         this.agencia = agencia;
         this.numero = numero;
-        System.out.println("Estoy creando una cuenta");
+        System.out.println("Cuenta No. "+ total + " creadas");
         Cuenta.total ++;
     }
 
@@ -59,14 +59,31 @@ public class Cuenta {
         }
     }
 
-    public boolean transferir(double valor, Cuenta cuenta) {
+    public boolean transferir(double valor, Cuenta destino) {
         if (this.saldo >= valor) {
-            this.saldo = this.saldo - valor;
-            cuenta.depositar(valor); //cuenta.saldo = cuenta.saldo + valor;
+            //this.saldo = this.saldo - valor;
+            this.saca(valor);
+            destino.depositar(valor);
             return true;
+        }else {
+            return false;
         }
-        return false;
+
+            //cuenta.depositar(valor); //cuenta.saldo = cuenta.saldo + valor;
+           // return true;
+        //}
+        //return false;
     }
+
+    public boolean saca(double valor){
+        if(this.saldo >= valor) {
+            this.saldo -= valor;
+            return true;
+        }else {
+            return false;
+        }
+    }
+
 
     //Metodo para obtener get
     public double getSaldo(){
