@@ -7,9 +7,16 @@ public class CuentaCorriente extends Cuenta {
         super(agencia, numero); //super llama o accede a cualquier atributo o metodos de la clase padre
     }
 
-        @Override //metodo de la clase padre esta siendo sobreescrito en la hija
+    @Override
+    public void depositar(double valor) {
+        this.saldo = this.saldo + valor;
+    }
+
+    @Override //metodo de la clase padre esta siendo sobreescrito en la hija
         public boolean saca(double valor) {
             double comision = 0.2;
             return super.saca(valor + comision);
         }
+
+
 }

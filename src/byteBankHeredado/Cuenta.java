@@ -1,6 +1,7 @@
 package byteBankHeredado;
-public class Cuenta {
-    private double saldo; //cambio a private : encapsulamiento para que no se pueda obtener y modificar sin usar el metodo set o get
+public abstract class Cuenta {
+    //private double saldo; //cambio a private : encapsulamiento para que no se pueda obtener y modificar sin usar el metodo set o get
+    protected double saldo; //Protected saldo es accesible desde las clases hijas.
     private int agencia;
     private int numero;
     private Cliente titular = new Cliente(); //Referencia el atributo titular a la clase Cliente
@@ -42,12 +43,17 @@ public class Cuenta {
 //    }
 
     //Metodo no retorna valor
+    /*
     public void depositar(double valor){ //Pudo ser saldo el parametro
         //Esta cuenta      Esta cuenta
         //This account      This account
         //This object  : this al atributo que esta en la clase
         this.saldo   =  this.saldo + valor;
     }
+    */
+    //Comvertimos el metodo depositar(anterior) en abstracta
+    public abstract void depositar(double valor);
+
 
     //Metodo retorna valor
     public boolean retirar(double valor){

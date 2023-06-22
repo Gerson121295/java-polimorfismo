@@ -87,7 +87,12 @@ No tienen cuerpo (implementación), solo definen la firma.
 
 public abstract double getBonificacion();
 
-
+Una clase abstracta puede tener atributos(campos), puede referenciar objetos
+no abstractos, puede tener constructores por defectos y personalizados, 
+elementos estaticos, metodos concretos, reales, getters and setters.
+Solo que ahora ya no puede ser instanciada por si sola, ahora solo puede
+ser instanciada por una implementacion real, por una clase que extienda(herede)
+de la clase abstracta.  
 
 
 
