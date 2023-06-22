@@ -9,6 +9,9 @@ public class ControlBonificacion {
         return this.suma;
     }
 
+    //El metodo registrarSalario que recibe funcionario funciona para los demas
+    //debido a que extienden de funcionario y son funcionarios.
+/*
     public double registrarSalario(Gerente gerente){
         this.suma = gerente.getBonificacion()+this.suma;
         System.out.println("Calculo actual: " + this.suma);
@@ -20,6 +23,6 @@ public class ControlBonificacion {
         System.out.println("Calculo actual: " + this.suma);
         return this.suma;
     }
-
+*/
 
 }

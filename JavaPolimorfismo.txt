@@ -42,7 +42,15 @@ También tenga en cuenta que protected está relacionado con la herencia.
 
          private < protected < public
 
+//Usando la palabra super tenemos acceso a los metodos de la clase padre que estan en private
+    //Sobreescritura de metodo: cuando en la clase padre y en la hija hay un metodo con el mismo nombre.
 
+
+//Sobreescribir(escribir el mismo metodo de la clase madre en la clase hija)
+ // el metodo getBonificacion de Funcionario(clase madre)
+Sobreescribir un metodo en una clase, la hace mas especifica por lo 
+que al llamar el metodo se hara desde la clase (se busca si primero esta
+en la clase hija) y no de la clase madre.
 
 
 
