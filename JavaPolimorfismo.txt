@@ -1,5 +1,7 @@
 
 --- Java Polimorfismo ---
+https://github.com/alura-es-cursos/java-herencia-polimorfismo/tree/clase-4
+
 //Gerente hereda los atributos de Funcionario por lo cual no es necesario
 //definir los atributos.
 
@@ -51,6 +53,45 @@ También tenga en cuenta que protected está relacionado con la herencia.
 Sobreescribir un metodo en una clase, la hace mas especifica por lo 
 que al llamar el metodo se hara desde la clase (se busca si primero esta
 en la clase hija) y no de la clase madre.
+
+@Override: Se utiliza para sobrescribir el método de la clase madre, 
+lo que indica que se ha modificado el método original.
+
+--Clase abstracta
+public abstract class Funcionario {
+
+/* La clase al ser abstracta no puede ser instanciada como tal
+* Al ser abstracta es una representacion conceptual, pero no puede ser una
+*representacion fisica del objeto.
+*/
+  //Funcionario gerson = new Funcionario();
+  Funcionario gerson = new Contador(); //ahora la clase Funcionario es abstracta
+  
+Una clase abstracta representa un concepto, algo abstracto, y el 
+compilador no permite instanciar un objeto de esa clase. Para crear 
+una instancia, es necesario crear primero una clase hija no abstracta.
+
+    //definimos un metodo abstracto el metodo de bonificicacion debido a que
+    // solo lo definimos y las clases hijas seran las encargadas de implementarlo
+    // sobreescribirlo
+    /* Definimos un metodo abstracto ya que no queremos que tenga una
+    implentacion(codigo dentro o el cuerpo) para dejar que sea implementado por las 
+    clases hijas(que describan el codigo de funcionalidad del metodo)
+        */
+ //Tanto para la clase y el metodo abstracto: Al ser abstracto conceptualmente exite pero
+// no exite realmente, no tiene implementacion. Este metodo obliga a las clases hijas a sobreescribirlas
+//excepto si la clase hija es abstracta no es obligada a implementar el metodo abstracto de la clase padre.
+
+un método abstracto define solo la firma (visibilidad, retorno, nombre del método y parámetros).
+No tienen cuerpo (implementación), solo definen la firma.
+
+public abstract double getBonificacion();
+
+
+
+
+
+
 
 
 

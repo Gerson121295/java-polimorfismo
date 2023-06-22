@@ -21,8 +21,9 @@ public boolean iniciarSesion(String clave){
 public double getBonificacion(){
     System.out.println("EJECUTANDO DESDE GERENTE");
     return super.getSalario() +
+            this.getSalario() * 0.5;
            // (super.getSalario()*0.1); //Para no escribir esto
-            super.getBonificacion();//con super accedemos al metodo bono de clase madre
+          //  super.getBonificacion();//con super accedemos al metodo bono de clase madre
 }
 
 

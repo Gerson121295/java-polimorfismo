@@ -1,6 +1,10 @@
 package byteBankHeredado;
 
-public class Funcionario {
+/* La clase al ser abstracta no puede ser instanciada como tal
+* Al ser abstracta es una representacion conceptual, pero no puede ser una
+*representacion fisica del objeto,
+*/
+public abstract class Funcionario {
     private String nombre;
     private  String documento;
     private double salario;
@@ -52,9 +56,23 @@ public class Funcionario {
     }
 */
 
-    public double getBonificacion(){
+
+    //Ya no se necesita que Funcionario tenga bonificacion cada clase saca su bono
+ /*   public double getBonificacion(){
             return this.salario * 0.05;
     }
+*/
+
+    //definimos un metodo abstracto el metodo de bonificicacion debido a que
+    // solo lo definimos y las clases hijas seran las encargadas de implementarlo
+    // sobreescribirlo
+    /* Definimos un metodo abstracto ya que no queremos que tenga una
+    implentacion(codigo dentro o el cuerpo) para dejar que sea implementado por las
+    clases hijas(que describan el codigo de funcionalidad del metodo)
+        */
+    public abstract double getBonificacion();
+//Tanto para la clase y el metodo abstracto: Al ser abstracto conceptualmente exite pero
+// no exite realmente, no tiene implementacion. Este metodo obliga a las clases hijas a sobreescribirlas
 
     public int getTipo() {
         return tipo;

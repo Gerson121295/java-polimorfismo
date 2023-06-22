@@ -3,7 +3,8 @@ package byteBankHeredado;
 public class TestControlBonificacion {
     public static void main(String[] args) {
 
-        Funcionario gerson = new Funcionario();
+        //Funcionario gerson = new Funcionario();
+        Funcionario gerson = new Contador(); //ahora la clase Funcionario es abstracta
         gerson.setSalario(2000);
 
         Gerente jimena = new Gerente();
