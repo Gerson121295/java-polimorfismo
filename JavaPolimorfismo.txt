@@ -6,11 +6,13 @@ https://github.com/alura-es-cursos/java-herencia-polimorfismo/tree/clase-4
 //definir los atributos.
 
 //Usando la palabra super tenemos acceso a los metodos de la clase padre 
-que estan en private
-    
-		     Funcionario
-		 /	   |	   \  -->Extends
-	Administrador	Gerente	    Contador
+que estan en private.
+
+			     Funcionario
+    			     /	      \
+	FuncionarioAutenticable	       \
+		 /	   \	   	\  	-->Extends
+	Administrador	Gerente	    	Contador
 
 
 --This--

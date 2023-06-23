@@ -1,6 +1,6 @@
 package byteBankHeredado;
 
-public class FuncionarioAutenticable {
+public class FuncionarioAutenticable extends Funcionario{
 
     private String clave;
 
@@ -12,4 +12,8 @@ public class FuncionarioAutenticable {
         return clave == "CursosOnLine";
     }
 
+    @Override
+    public double getBonificacion() {
+        return 0;
+    }
 }
