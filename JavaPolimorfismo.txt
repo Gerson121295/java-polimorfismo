@@ -187,18 +187,29 @@ public class Administrador extends Funcionario implements Autenticable{
 La interfaz es un rotulo que se le agrega al objeto. Para decir todo lo que
 tenga este rotulo o etiqueta va a encontrar este metodo.
 public boolean autentica(Autenticable gerente){ //interface Autenticable
+La interfaz: Es un contrato donde el que firma es responsable de 
+implementar estos métodos (cumplir el contrato).
+La interfaz no puede tener variables, no puede tener constructor, no puede
+tener metodos implementados, solo la firma del metodo(define el metodo mas no 
+lo implementa).
+
+-- polimorfismo
+- Es la capacidad de un objeto de ser referenciado por varios tipos.
+Podemos comunicarnos con un objeto a través de diferentes tipos de variables.
+Por ejemplo, si hay una clase Gerente que sea hija de Funcionario. 
+Un objeto de tipo Gerente puede ser referenciado como tipo Funcionario también.
+
+-Tenemos polimorfismo cuando una clase se extiende de otra o 
+también cuando una clase implementa una interfaz
+tenemos polimorfismo por herencia o interfaz.
+
+Link de diagrama:
+https://drive.google.com/file/d/1enrPHmpC9rPggMMsCHzKzJtlZ_Uzmg6W/view?usp=sharing
 
 
-.
-
-			     Funcionario
-    			     /	      \
-	FuncionarioAutenticable	       \
-		 /	   \	   	\  	-->Extends
-	Administrador	Gerente	    	Contador
 
 
-
+			  
 
 
 
