@@ -1,8 +1,8 @@
 package byteBankHeredado;
 
 public class SistemaInterno {
-    private String clave = "12345";
-    public boolean autentica(Gerente gerente){
+    private String clave = "CursosOnLine";
+    public boolean autentica(FuncionarioAutenticable gerente){
         boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
 
         if(puedeIniciarSesion){

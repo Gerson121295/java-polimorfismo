@@ -136,10 +136,8 @@ abstractos. ¡El resto sigue siendo válido!
 -Puede tener métodos concretos (con implementación):pueden tener 
 atributos, ¡también pueden tener métodos concretos!
 
-
-
-
-
+--- Interfaces ---
+En JAVA no podemos extens mas de una clase, una clase hija no puede tener 2 padres.
 
 
 

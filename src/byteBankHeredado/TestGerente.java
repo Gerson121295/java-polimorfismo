@@ -1,5 +1,7 @@
 package byteBankHeredado;
 
+
+/*
 public class TestGerente {
     public static void main(String[] args) {
         Gerente gerente = new Gerente();
@@ -14,3 +16,6 @@ public class TestGerente {
         System.out.println(gerente.iniciarSesion("CursosOnLine"));
     }
 }
+
+
+ */
