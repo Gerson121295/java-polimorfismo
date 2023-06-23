@@ -8,6 +8,11 @@ https://github.com/alura-es-cursos/java-herencia-polimorfismo/tree/clase-4
 //Usando la palabra super tenemos acceso a los metodos de la clase padre 
 que estan en private
     
+		     Funcionario
+		 /	   |	   \  -->Extends
+	Administrador	Gerente	    Contador
+
+
 --This--
 La palabra this se refiere al objeto actual en un metodo o constructor. El 
 uso mas comun de este termino es eliminar la confusion entre los atributos
@@ -92,7 +97,50 @@ no abstractos, puede tener constructores por defectos y personalizados,
 elementos estaticos, metodos concretos, reales, getters and setters.
 Solo que ahora ya no puede ser instanciada por si sola, ahora solo puede
 ser instanciada por una implementacion real, por una clase que extienda(herede)
-de la clase abstracta.  
+de la clase abstracta. Un metodo abstracto necesita que la clase se abstracta.
+
+
+//private double saldo; //cambio a private : encapsulamiento para que no se pueda obtener y modificar sin usar el metodo set o get
+protected double saldo; //Protected saldo es accesible desde las clases hijas.
+    
+--- Interfaz: Palabra clave implements
+La interfaz admite herencia multiple
+Proporciona una abstraccion absoluta y no puede tener implementaciones de metodos
+La interfaz no contiene constructor.
+La interfaz no puede tener modificador de acceso, por defecto todos los
+accesos son publicos.
+Los miembros de la interfaz no pueden ser static.
+
+--Clase Abstracta: Palabra clave extends
+La clase abstracta no admite herencia multiple.
+Puede tener metodos con implementaciones.
+La clase abstracta contiene constructor.
+La clase abstracta puede tener modificadores de acceso.
+Solo los miembros completamente abstractos pueden ser static.
+
+Las clases abstractas son útiles cuando queremos utilizar comportamientos y atributos basados ​​en clases con comportamientos comunes.
+Los beneficios de la herencia siguen siendo válidos!
+Usamos métodos abstractos cuando queremos "forzar" a un hijo concreto (clase concreta) a implementar un método.
+Ese es el significado de los métodos abstractos, garantizar que el hijo implemente un comportamiento.
+
+Sobre las clases abstractas:
+-No se puede crear una instancia:porque lo abstracto (la clase) no puede 
+volverse concreto (objeto). Por lo tanto, no podemos instanciar objetos 
+de una clase abstracta.
+-Puede tener métodos abstractos (sin implementación): como vimos, una 
+clase abstracta puede tener métodos sin implementación. Por lo tanto, 
+obligamos a un hijo a implementar el método.
+-Pueden tener atributos: podemos tener atributos Una clase abstracta es 
+una clase normal, simplemente no puede instanciar y puede tener métodos 
+abstractos. ¡El resto sigue siendo válido!
+-Puede tener métodos concretos (con implementación):pueden tener 
+atributos, ¡también pueden tener métodos concretos!
+
+
+
+
+
+
 
 
 
