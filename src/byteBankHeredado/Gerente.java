@@ -4,7 +4,7 @@ package byteBankHeredado;
 //Gerente hereda los atributos de Funcionario por lo cual no es necesario
 //definir los atributos.
 
-public class Gerente extends FuncionarioAutenticable{ //Gerente Extiende de funcionario
+public class Gerente extends Funcionario implements Autenticable{ //Gerente Extiende de funcionario
 
 
 //Usando la palabra super tenemos acceso a los metodos de la clase padre que estan en private
@@ -18,6 +18,13 @@ public double getBonificacion(){
 }
 
 
+    @Override
+    public void setClave(String clave) {
 
+    }
 
+    @Override
+    public boolean iniciarSesion(String clave) {
+        return false;
+    }
 }

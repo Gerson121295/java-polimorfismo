@@ -2,7 +2,7 @@ package byteBankHeredado;
 
 public class SistemaInterno {
     private String clave = "CursosOnLine";
-    public boolean autentica(FuncionarioAutenticable gerente){
+    public boolean autentica(Autenticable gerente){ //Autenticable es una interfaz
         boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
 
         if(puedeIniciarSesion){

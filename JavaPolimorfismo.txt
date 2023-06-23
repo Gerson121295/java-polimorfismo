@@ -140,6 +140,64 @@ atributos, ¡también pueden tener métodos concretos!
 
 --- Interfaces ---
 En JAVA no podemos extens mas de una clase, una clase hija no puede tener 2 padres.
+Una interfaz es una clase(tiene nombre, define atributos, metodos) es parecido
+a la clase abstracta(el define la firma del metodo, pero puede dejarlo sin 
+cuerpo para que uno de los hijos lo definan o implementen a su manera), 
+
+Para definir una interfaces se debe agregar en lugar de class la palabra interface
+La interfaz no puede tener metodos implementados(con cuerpos).
+
+no hay herencia múltiple en Java. ¿Cómo podemos evitar la falta de ella?
+Usando interfaces tenemos otra forma de lograr polimorfismo sin herencia.
+
+-Podemos extender solo una clase abstracta, pero podemos implementar varias interfaces.
+Solo existe una herencia simple en Java, pero podemos implementar tantas interfaces como queramos.
+-Todos los métodos de una interfaz son abstractos, los de una clase abstracta pueden no serlo.
+todos los métodos en la interfaz son siempre abstractos y siempre públicos.
+En una clase abstracta podemos tener métodos concretos y abstractos.
+
+En la interfaz todos los metodos son abstractos.
+La interfaz no puede tener atributos privados porque no va a ver foma
+de accesar a esos atributos por que no hay cuerpo en cada metodo.
+Y al ser privado es inaccesible de otra parte del codigo.
+
+Como toda interface es abstracta no es necesario escribir la palabra abstract
+en las clase y en los metodos. 
+Una interface no puede extender de ninguna clase.
+Una interface puede extender de otra interface pero jamas de una clase.
+public abstract interface Autenticable{
+    public abstract void setClave(String clave);
+
+Quedaria asi:
+public interface Autenticable{
+    public void setClave(String clave);
+
+La interface me permite implementarlas en las clases, para hacerlo se usa
+la palabra reservada: implements
+Al implementar una interface en una clase se esta obligado en implementar
+los metodos en esa clase.
+
+public class Administrador implements Autenticable{
+
+
+En una clase se puede extender(heredar) e implementar(implements) una interfaz
+pero se tendrán que agregar los metodos de estas:
+public class Administrador extends Funcionario implements Autenticable{
+
+La interfaz es un rotulo que se le agrega al objeto. Para decir todo lo que
+tenga este rotulo o etiqueta va a encontrar este metodo.
+public boolean autentica(Autenticable gerente){ //interface Autenticable
+
+
+.
+
+			     Funcionario
+    			     /	      \
+	FuncionarioAutenticable	       \
+		 /	   \	   	\  	-->Extends
+	Administrador	Gerente	    	Contador
+
+
 
 
 
