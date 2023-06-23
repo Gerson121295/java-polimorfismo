@@ -206,6 +206,15 @@ tenemos polimorfismo por herencia o interfaz.
 Link de diagrama:
 https://drive.google.com/file/d/1enrPHmpC9rPggMMsCHzKzJtlZ_Uzmg6W/view?usp=sharing
 
+La herencia captura lo que es común y aísla lo que es diferente entre clases.
+ventaja de usar interfaces: Garantiza que todos los métodos de clase que 
+implementan una interfaz se puedan llamar de forma segura.
+Esta es la idea del contrato, asegurar que la clase tenga un 
+comportamiento, solo basta con firmar el contrato (implementar la 
+interfaz).
+
+
+
 
 
 

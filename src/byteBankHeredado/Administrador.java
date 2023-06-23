@@ -1,18 +1,29 @@
 package byteBankHeredado;
 
 public class Administrador extends Funcionario implements Autenticable{
+    private AutenticacionUtil util;
 
-    private String clave;
+    public Administrador(){
+        this.util = new AutenticacionUtil();
+    }
+
     @Override
     public void setClave(String clave) {
-        this.clave = clave;
+        this.util.setClave(clave);
     }
 
     @Override
     public boolean iniciarSesion(String clave) {
-        return this.clave == clave; //retorna true si cumple, sino false
+        return this.util.iniciarSesion(clave);
     }
 
+
+    /*///Este metodo ya no se implementa de esta manera.- se definio en AutenticacionUtil-
+    @Override
+    public boolean iniciarSesion(String clave) {
+        return this.clave == clave; //retorna true si cumple, sino false
+    }
+*/
     @Override
     public double getBonificacion() {
         return this.getSalario();
