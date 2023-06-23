@@ -205,6 +205,7 @@ tenemos polimorfismo por herencia o interfaz.
 
 Link de diagrama:
 https://drive.google.com/file/d/1enrPHmpC9rPggMMsCHzKzJtlZ_Uzmg6W/view?usp=sharing
+https://drive.google.com/file/d/1G-lmqNhfjQ79B3m68ELXMAoVTNk2We8l/view?usp=sharing
 
 La herencia captura lo que es común y aísla lo que es diferente entre clases.
 ventaja de usar interfaces: Garantiza que todos los métodos de clase que 
@@ -212,6 +213,10 @@ implementan una interfaz se puedan llamar de forma segura.
 Esta es la idea del contrato, asegurar que la clase tenga un 
 comportamiento, solo basta con firmar el contrato (implementar la 
 interfaz).
+
+¿Cuál de las siguientes afirmaciones representa una ventaja de utilizar la composición y las interfaces sobre el uso de la herencia?
+Con composiciones e interfaces tendremos más flexibilidad con nuestro código, ya que no estaremos apegados al acoplamiento que propone la herencia.
+
 
 
 
